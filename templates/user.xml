@@ -1,5 +1,5 @@
 <templateSet group="user">
-  <template name="ndcontroller" value="import HttpError from 'http-errors';&#10;import _ from 'lodash';&#10;&#10;class Controller {&#10;  static async index(req, res, next) {&#10;    try {&#10;      console.log(111111)&#10;    } catch (e) {&#10;      next(e);&#10;    }&#10;&#10;    res.json({&#10;      status: 'ok',&#10;      message: 'Response',&#10;    });&#10;  }&#10;}&#10;&#10;export default UserController;" description="" toReformat="true" toShortenFQNames="true">
+  <template name="ndcontroller" value="import _ from 'lodash';&#10;import Utils from '../services/Utils';&#10;&#10;class Controller {&#10;  static async index(req, res, next) {&#10;    try {&#10;      console.log(111111);&#10;    } catch (e) {&#10;      next(e);&#10;    }&#10;&#10;    res.json({&#10;      status: 'ok',&#10;      message: 'Response',&#10;    });&#10;  }&#10;}&#10;&#10;export default UserController;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="ES6_STATEMENT" value="true" />
       <option name="ES6_TOP_LEVEL_STATEMENT" value="true" />
@@ -22,6 +22,14 @@
     </context>
   </template>
   <template name="ndmodel" value="import { DataTypes, Model } from 'sequelize';&#10;import db from '../services/db';&#10;&#10;class B2bCustomers extends Model {&#10;&#10;}&#10;&#10;B2bCustomers.init({&#10;  id: {&#10;    type: DataTypes.BIGINT,&#10;    primaryKey: true,&#10;    allowNull: false,&#10;    autoIncrement: true,&#10;  },&#10;}, {&#10;  sequelize: db,&#10;  tableName: 'b2b_customers',&#10;  modelName: 'b2bCustomers',&#10;  timestamps: false,&#10;});&#10;&#10;export default B2bCustomers;" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+      <option name="ES6_TOP_LEVEL_STATEMENT" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="&lt;abbreviation&gt;" value="import _ from 'lodash';&#10;import Utils from '../services/Utils';&#10;&#10;class Controller {&#10;  static async index(req, res, next) {&#10;    try {&#10;      console.log(111111);&#10;    } catch (e) {&#10;      next(e);&#10;    }&#10;&#10;    res.json({&#10;      status: 'ok',&#10;      message: 'Response',&#10;    });&#10;  }&#10;}&#10;&#10;export default UserController;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="ES6_STATEMENT" value="true" />
       <option name="ES6_TOP_LEVEL_STATEMENT" value="true" />
