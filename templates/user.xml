@@ -29,7 +29,7 @@
       <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="&lt;abbreviation&gt;" value="import _ from 'lodash';&#10;import Utils from '../services/Utils';&#10;&#10;class Controller {&#10;  static async index(req, res, next) {&#10;    try {&#10;      console.log(111111);&#10;    } catch (e) {&#10;      next(e);&#10;    }&#10;&#10;    res.json({&#10;      status: 'ok',&#10;      message: 'Response',&#10;    });&#10;  }&#10;}&#10;&#10;export default UserController;" toReformat="true" toShortenFQNames="true">
+  <template name="&lt;abbreviation&gt;" value="import _ from 'lodash';&#10;import Utils from '../services/Utils';&#10;&#10;class Controller {&#10;  static async index(req, res, next) {&#10;    try {&#10;      console.log(111111);&#10;    } catch (e) {&#10;      next(e);&#10;    }&#10;&#10;    res.json({&#10;      status: 'ok',&#10;      message: 'Response',&#10;    });&#10;  }&#10;}&#10;&#10;export default UserController;" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="ES6_STATEMENT" value="true" />
       <option name="ES6_TOP_LEVEL_STATEMENT" value="true" />
