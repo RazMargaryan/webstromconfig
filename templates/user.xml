@@ -37,4 +37,10 @@
       <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="koafunc" value="static async NAME(ctx) {&#10;    const transaction = await db.transaction();&#10;    try {&#10;      const data = ctx.request.body;&#10;&#10;      await transaction.commit();&#10;&#10;      ctx.status = 200;&#10;      ctx.body = data&#10;    } catch (e) {&#10;      await transaction.rollback();&#10;      throw new SingleError(e.message)&#10;    }&#10;  }" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="ES6_CLASS" value="true" />
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
 </templateSet>
