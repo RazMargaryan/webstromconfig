@@ -15,7 +15,7 @@
       <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ndfunc" value="static async NAME(req, res, next) {&#10;    try {&#10;      res.json({&#10;        status: 'ok',&#10;      });&#10;    } catch (e) {&#10;      next(e);&#10;    }&#10;  }" description="" toReformat="true" toShortenFQNames="true">
+  <template name="ndfunc" value="static async NAME(req, res, next) {&#10;const transaction = await sequelize.transaction();&#10;    try {&#10;    await transaction.commit();&#10;    &#10;      res.json({&#10;        status: 'ok',&#10;      });&#10;    } catch (e) {&#10;    await transaction.rollback();&#10;      next(e);&#10;    }&#10;  }" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="ES6_CLASS" value="true" />
       <option name="JS_CLASS" value="true" />
