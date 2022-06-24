@@ -4,6 +4,7 @@
       <mapping pattern="OrderNotification.ejs" type="AUTO_DETECTED" />
       <mapping pattern=".dockerignore" type="PLAIN_TEXT" />
       <mapping pattern=".gitempty" type="PLAIN_TEXT" />
+      <mapping ext="prosto" type="PLAIN_TEXT" />
       <removed_mapping pattern=".env" approved="true" type="AUTO_DETECTED" />
     </extensionMap>
   </component>
